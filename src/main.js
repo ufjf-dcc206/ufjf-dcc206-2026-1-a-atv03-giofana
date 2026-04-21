@@ -1,4 +1,7 @@
 import './style.css'
-import { setupRootApp } from './setupRoutApp.js';
+import { setupEvents, setupRootApp } from './setupRoutApp.js';
 
-document.querySelector('#app').append(setupRootApp());
+const app = document.querySelector('#app');
+iniciaLista();
+app.append(setupRootApp());
+setupEvents(app);
